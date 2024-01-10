@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="generate-password">
+            <input type="text" name="password" id="password">
+            <button class="copy">
+                <img src="./images/password-copy.png" alt="">
+            </button>
+        </div>
+        <div class="generate-details">
+            <div>
+                <div class="length">
+                    <p class="character-length">Character Length</p>
+                    <p class="length-password">10</p>
+                </div>
+                <input type="range" name="length" id="length" min="6" max="20" step="1">
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="uppercase" id="uppercase">
+                <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="lowercase" id="lowercase">
+                <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="numbers" id="numbers">
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="symbols" id="symbols">
+                <label for="symbols">Include Symbols</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="similar" id="similar">
+                <label for="similar">Include Similar Symbols</label>
+            </div>
+
+            <button id="generate">Generate <img src="./images/bx_arrow-to-left.png" alt=""></button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
